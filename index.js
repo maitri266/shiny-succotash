@@ -31,3 +31,10 @@ const server = http.createServer(app);
 server.listen(port, hostname, () => {
 	console.log('Server running on ', { hostname, port });
 });
+
+app.use(express.json()); //for parsing the request body in json
+app.use(morgan('tiny')); //for logging
+app.use(express.static(__dirname + '/public'));
+app.use('/dishes', dishesRouter); //handling routes for dishes
+app.use('/leaders', leadersRouter); //handling routes for leaders
+app.use('/promotions', promotionsRouter); //handling routes for promotions
