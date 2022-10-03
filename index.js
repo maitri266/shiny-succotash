@@ -17,6 +17,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/dishes', dishesRouter); //handling routes for dishes
 app.use('/leaders', leadersRouter); //handling routes for leaders
 app.use('/promotions', promotionsRouter); //handling routes for promotions
+app.use('/waiter', waiterRouter); //handling routes for promotions
 
 //route that handles other requests
 app.all('/*', (req, res, next) => {
@@ -38,3 +39,4 @@ app.use(express.static(__dirname + '/public'));
 app.use('/dishes', dishesRouter); //handling routes for dishes
 app.use('/leaders', leadersRouter); //handling routes for leaders
 app.use('/promotions', promotionsRouter); //handling routes for promotions
+app.use('/waiter', waiterRouter); //handling routes for promotions
