@@ -27,5 +27,5 @@ waiterRouter
 	});
 
 
-
+console.log('waiterRoute');
 module.exports = promotionsRouter;
