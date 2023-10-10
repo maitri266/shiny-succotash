@@ -25,7 +25,5 @@ promotionsRouter
 		res.setHeader('Content-Type', 'text/html');
 		res.end(`Deleting all the promotions`);
 	});
-
-
-
+console.log('promotionsRouter');
 module.exports = promotionsRouter;
