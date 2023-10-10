@@ -48,5 +48,6 @@ leadersRouter
 		res.setHeader('Content-Type', 'text/html');
 		res.end(`Deleted ${JSON.stringify(req.params)} from leaders`);
 	});
+console.log('leadersRouter');
 
 module.exports = leadersRouter;
