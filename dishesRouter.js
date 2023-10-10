@@ -49,4 +49,6 @@ dishesRouter
 		res.end(`Deleted ${JSON.stringify(req.params)} from dishes`);
 	});
 
+console.log('dishesRouter');
+
 module.exports = dishesRouter;
